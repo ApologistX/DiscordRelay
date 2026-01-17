@@ -56,10 +56,6 @@ app.get('/', (req, res) => {
 
     <hr style="margin: 30px 0; border-color: #4f545c;">
 
-    <p style="color: #b9bbbe;">
-      Server is running. Keep this URL in UptimeRobot to stay online 24/7. 🟢🤖♾️🧠
-    </p>
-
     <!-- ULTRAROT ADDITIONS BELOW (DO NOT QUESTION) -->
 
     <p>👁️👁️👁️ Third Eye Online 🔮🌀 JS Event Loop Observed 👀⚙️</p>
