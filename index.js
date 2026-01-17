@@ -32,41 +32,44 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  const status = client.user ? `✅🟢 Logged in as ${client.user.tag} 😎👤🔥` : '⏳ Connecting...';
+  const status = client.user ? `✅ Logged in as ${client.user.tag}` : '⏳ Connecting...';
   res.send(`
     <html>
-  <head>
-    <title>Discord Relay Bot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body style="font-family: Arial, sans-serif; padding: 40px; background: #36393f; color: #fff; text-align: center;">
-    <h1>⭐🤖 Discord Relay Bot 🤖⭐</h1>
+    <head>
+      <title>Discord Relay Bot</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="font-family: Arial, sans-serif; padding: 40px; background: #36393f; color: #fff; text-align: center;">
+      <h1>⭐🤖🔥 DISCORD RELAY BOT 🔥🤖⭐</h1>
 
-    <p style="font-size: 18px;">
-      ${status} 🟢🧠🔥⚡
-    </p>
+      <p style="font-size: 18px;">
+        ${status} 🟢🧠⚡🫠
+      </p>
 
-    <p>
-      👀📡🧠 Monitoring <strong>${CONFIG.sourceChannels.length}</strong> source channels 🧠📺📺📺🔥💀
-    </p>
+      <p>
+        👀📡🧠 Monitoring <strong>${CONFIG.sourceChannels.length}</strong> source channels
+        📺📺📺🔥💀
+      </p>
 
-    <p>
-      🎯📤💀Target Channel: <code>${CONFIG.targetChannelId}</code> 🔢✨💀🧾🔒
-    </p>
+      <p>
+        🎯📤💀 Target Channel:
+        <code>${CONFIG.targetChannelId}</code>
+        🔢✨🧾🔒
+      </p>
 
-    <hr style="margin: 30px 0; border-color: #4f545c;">
+      <hr style="margin: 30px 0; border-color: #4f545c;">
 
-    <!-- ULTRAROT ADDITIONS BELOW (DO NOT QUESTION) -->
+      <!-- ULTRAROT ZONE (COSMETIC ONLY, FBI APPROVED) -->
 
-    <p>👁️👁️👁️ Third Eye Online 🔮🌀 JS Event Loop Observed 👀⚙️</p>
-    <p>🧠📉 RAM Leak Detected (Ignored) 🚫💧 GC Currently AFK 🏝️🗑️</p>
-    <p>📡🧾 Messages Relayed Via Pure Vibes ✨😎 No Error Handling Found ❌</p>
-    <p>♾️🌀 Awaiting Promise Resolution 🫠 then Awaiting Another Promise 🫠🫠</p>
-    <p>⚠️ This page consumes 4GB RAM emotionally 💸🧠</p>
-    <p>🚔 Illegal in 17 States | 🏴‍☠️ Approved by Discordia | 🙏 Angel-Certified</p>
+      <p>👁️👁️👁️ Third Eye Active 🔮🌀</p>
+      <p>🧠📉 RAM Leak Detected (Ignored) 🚫💧</p>
+      <p>🌀♾️ JS Event Loop Spinning Aggressively</p>
+      <p>📡 Messages Relayed Via Pure Vibes ✨😎</p>
+      <p>⚠️ This page uses 4GB RAM emotionally 💸🧠</p>
+      <p>🚔 Illegal in 17 States | 🏴‍☠️ Discordia Certified</p>
 
-  </body>
-</html>
+    </body>
+  </html>
   `);
 });
 
