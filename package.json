@@ -1,0 +1,16 @@
+{
+  "name": "discord-relay-bot",
+  "version": "1.0.0",
+  "description": "Discord channel relay self-bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js-selfbot-v13": "^2.14.12",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
