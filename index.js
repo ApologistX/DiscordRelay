@@ -133,6 +133,24 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}`);
   console.log(`Monitoring ${CONFIG.sourceChannels.length} source channels`);
   console.log(`Relaying to channel: ${CONFIG.targetChannelId}`);
+  
+  // Set Rich Presence with timestamp (Discord handles the live counting)
+  const startTime = Date.now();
+  
+  client.user.setPresence({
+    activities: [{
+      name: 'Relay Bot',
+      type: 'PLAYING',
+      details: `Monitoring ${CONFIG.sourceChannels.length} channels`,
+      state: 'Relaying messages...',
+      timestamps: {
+        start: startTime
+      }
+    }],
+    status: 'online'
+  });
+  
+  console.log('Rich Presence set with live timestamp!');
 });
 
 client.on('messageCreate', async (message) => {
