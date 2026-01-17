@@ -60,14 +60,6 @@ app.get('/', (req, res) => {
 
     <hr style="margin: 30px 0; border-color: #4f545c;">
 
-    <!-- UPTIME COUNTER -->
-    <div style="background: #2f3136; padding: 20px; border-radius: 8px; display: inline-block; margin-bottom: 20px;">
-      <p style="margin: 0; color: #b9bbbe; font-size: 14px;">⏱️ UPTIME ⏱️</p>
-      <p id="uptime" style="margin: 10px 0 0 0; font-size: 32px; font-weight: bold; color: #43b581;">Loading...</p>
-    </div>
-
-    <hr style="margin: 30px 0; border-color: #4f545c;">
-
     <!-- ULTRAROT ADDITIONS BELOW (DO NOT QUESTION) -->
 
     <p>👁️👁️👁️ Third Eye Online 🔮🌀 JS Event Loop Observed 👀⚙️</p>
@@ -77,6 +69,14 @@ app.get('/', (req, res) => {
     <p>⚠️ This page consumes 4GB RAM emotionally 💸🧠</p>
     <p>🚔 Illegal in 17 States | 🏴‍☠️ Approved by Discordia | 🙏 Angel-Certified</p>
     <p style="color: #b9bbbe; margin-top: 30px;">✅ Running on Railway • Live updates • Pure Chaos Energy 🌀💀</p>
+
+    <hr style="margin: 30px 0; border-color: #4f545c;">
+
+    <!-- UPTIME COUNTER AT BOTTOM -->
+    <div style="background: #2f3136; padding: 20px; border-radius: 8px; display: inline-block;">
+      <p style="margin: 0; color: #b9bbbe; font-size: 14px;">⏱️ UPTIME ⏱️</p>
+      <p id="uptime" style="margin: 10px 0 0 0; font-size: 32px; font-weight: bold; color: #43b581;">Loading...</p>
+    </div>
 
     <script>
       let startTime = ${uptimeSeconds};
